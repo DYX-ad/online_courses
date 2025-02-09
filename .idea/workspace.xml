@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="755d4c52-6450-4b18-b7c1-ff05a681d2eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/courses/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/templates/confirm_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/templates/document_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/courses/templates/update_document.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courses/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courses/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/templates/confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/templates/document_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/document_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courses/templates/update_document.html" beforeDir="false" afterPath="$PROJECT_DIR$/courses/templates/update_document.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/courses/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/urls.py" afterDir="false" />
@@ -45,16 +44,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.app.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/courses" />

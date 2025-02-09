@@ -20,7 +20,9 @@ from django.conf.urls.static import static
 from django.conf import settings
 from courses import views
 
+
 urlpatterns = [
+    path('', views.index, name='index'),
     path('admin/', admin.site.urls),
     path('document_list/', views.document_list, name='document_list'),
     path('update_document/<int:document_id>', views.update_document, name='update_document'),

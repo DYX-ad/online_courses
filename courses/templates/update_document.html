@@ -1,16 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Document</title>
+    <!-- Подключаем Google Fonts для красивых шрифтов -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Подключаем Bootstrap для стилизации -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Устанавливаем яркий фон */
+        body {
+            background-color: #f0f8ff; /* светлый голубой фон */
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Стиль для заголовка */
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+        }
+
+        /* Делаем кнопки более стильными */
+        .btn-primary {
+            background-color: #4CAF50;
+            border-color: #4CAF50;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #45a049;
+            border-color: #45a049;
+            transform: scale(1.1); /* Немного увеличиваем кнопку при наведении */
+        }
+
+        .btn-secondary {
+            background-color: #009688;
+            border-color: #009688;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn-secondary:hover {
+            background-color: #00897b;
+            border-color: #00897b;
+            transform: scale(1.1);
+        }
+
+        /* Улучшаем форму */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Добавляем мягкие тени для формы */
+        .container {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        /* Убираем рамки у полей ввода */
+        input, select, textarea {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+        }
+    </style>
 </head>
 <body>
-    <h1>Update Document</h1>
-    <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Save Changes</button>
-    </form>
-    <a href="{% url 'document_list' %}">Back to Document List</a>
+    <div class="container mt-5">
+        <h1 class="mb-4">Update Document</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.as_p }}
+            </div>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+        <a href="{% url 'document_list' %}" class="btn btn-secondary mt-3">Back to Document List</a>
+    </div>
 
+    <!-- Подключаем Bootstrap JS (для некоторых компонентов) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

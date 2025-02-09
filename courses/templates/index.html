@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+
+    <!-- Подключаем Google Fonts для красивых шрифтов -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Подключаем Bootstrap для стилизации -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Подключаем статические файлы -->
+    {% load static %}
+
+    <style>
+        /* Устанавливаем фоновое изображение */
+        body {
+            background-image: url("{% static 'images/A_person_sitting_at_a_desk_in_a_modern,_well-lit_r.webp' %}");
+            background-size: cover; /* Покрытие всего экрана */
+            background-position: center; /* Центрируем картинку */
+            font-family: 'Roboto', sans-serif;
+            color: white; /* Белый цвет текста для контраста */
+            text-align: center; /* Центрируем текст */
+            padding: 50px 0;
+        }
+
+        /* Заголовок */
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Стили для ссылки */
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        /* Контейнер для текста */
+        .container {
+            background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный фон */
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Добро пожаловать на нашу онлайн платформу!</h1>
+        <p><a href="{% url 'document_list' %}">Перейти к списку документов</a></p>
+    </div>
+
+    <!-- Подключаем Bootstrap JS (для некоторых компонентов) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

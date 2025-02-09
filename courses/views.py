@@ -4,6 +4,12 @@ from .forms import TopicDocumentForm
 from .models import TopicDocument
 
 
+
+
+def index(request):
+    return render(request, 'index.html')
+
+
 def document_list(request):
     if request.method == "POST":
         form = TopicDocumentForm(request.POST, request.FILES)
